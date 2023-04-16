@@ -16,7 +16,7 @@
 
 ## Требования к операционной системе
 Тестирование сервиса проводилось на операционной системе ubuntu 20.04 установленной на виртуальном выделенном сервере. Перед началом работы необходимо установить на операционную систему docker и docker-compose<sup>[1](#myfootnote1)</sup>
-## Описание файла docker-compose.yaml
+## Описание файла home/docker-compose/docker-compose.yaml
 
 ```yaml
 version: '2.1'
@@ -94,7 +94,7 @@ client = NocoDBRequestsClient(
 
 project = NocoDBProject(
         "noco", # org name. noco by default
-        "my_project_car" # project name. Case sensitive!!
+        "my_db" # project name. Case sensitive!!
 )
 table_name = "Sheet-1"
 table_rows = client.table_row_list(project, table_name)
